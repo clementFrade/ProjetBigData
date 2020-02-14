@@ -12,6 +12,10 @@ Ce fichier est le notebook Jupyter sur lequel nous avons effectué nos tests. Il
 
 Ce fichier en Python contient le code permettant, à partir d'un modèle entraîné d'algorithme de classification, de prédire les risques des personnes du fichier "predict.csv" et les ajoute dans une nouvelle colonne à la fin du fichier.
 
+## finalized_model.sav
+
+Ce fichier contient le modèle retenu. Il est indispensable au script predict.py
+
 ## ec2-mongo.bat
 
 Ce script en Batch est lancable depuis un système Windows sur lequel vous avez MongoDB d'installé et son service lancé. Il va récupérer sur la machine Linux de AWS EC2 et rapatrier en local le fichier result.csv que l'algorithme a créé. Ce fichier est ensuite importé dans MongoDB dans une nouvelle base de donnée "pbd_cty" dans une nouvelle Collection "result". Certaines valeurs dans ce script sont à remplacer en fonction de votre installation (DNS de l'instance, chemin du fichier, etc) et sont sous la forme "_VARIABLE_A_REMPLACER_".
