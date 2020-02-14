@@ -1,0 +1,1 @@
+db.getCollection('result').find({ result : 1})
